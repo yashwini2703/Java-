@@ -1,0 +1,25 @@
+//"Amar" is HDFC bank customer his Balance is 25000. He deposited 15000 amount himself.
+//After  some time He trasfered 11000 amount to his friend "Surya".
+//Print the current balance and find interest value on that amount with interest value 2%  and 12months?
+public class Main  {
+		public static void main(String s[]) {
+			Amar obj=new Amar();
+			System.out.println("Current Bance is "+obj.CurrBal);
+			obj.interestValue();
+		
+		}}
+class Amar{
+		double InitialBal=25000;
+		double Deposite=15000;
+		double transfered=11000;
+
+		double CurrBal=InitialBal+Deposite-transfered;
+		
+		public void interestValue() {
+			double IR=2;
+			double P=12;
+			System.out.println("Interest Value is "+ CurrBal*IR*P) ;
+			
+		}
+		
+		}
